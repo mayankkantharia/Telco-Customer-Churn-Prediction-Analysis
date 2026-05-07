@@ -1,4 +1,4 @@
-# 📉 Telco Customer Churn Prediction — End-to-End ML Pipeline
+# 📉 Telco Customer Churn Prediction - End-to-End ML Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
@@ -26,7 +26,7 @@ Customer churn is a key revenue risk for telecoms. This project identifies at-ri
 
 ## Dataset
 
-- **Source:** [IBM Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+- **Source:** [IBM Telco Customer Churn - Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 - **Size:** Original 7,043 rows; this work uses a stratified sample of **5,000** rows
 - **Features:** 21 (demographics, contract type, payment method, services, billing)
 - **Class balance:** ~73% non-churn / 27% churn
@@ -35,7 +35,7 @@ Customer churn is a key revenue risk for telecoms. This project identifies at-ri
 
 ## Methodology
 
-### Phase 1 — EDA & Data Preparation
+### Phase 1 - EDA & Data Preparation
 - Removed irrelevant columns (e.g., `customerID`) and handled missing `TotalCharges`
 - Standardised column names and categorical labels
 - Visualised distributions, correlations, and relationships (histograms, boxplots, violin plots)
@@ -47,7 +47,7 @@ Key EDA findings:
 - Higher monthly charges and shorter tenure are strong churn indicators
 - Senior citizens and very new customers are higher-risk segments
 
-### Phase 2 — Predictive Modelling
+### Phase 2 - Predictive Modelling
 
 - **Split:** 70/30 stratified train/test
 - **Validation:** 5-fold stratified cross-validation
@@ -56,12 +56,12 @@ Key EDA findings:
 - **Dropped:** `Gender`, `PhoneService` (low predictive signal per ANOVA)
 
 Models trained and tuning:
-- Logistic Regression — GridSearchCV (C, solver)
-- K-Nearest Neighbours — GridSearchCV (k, metric)
-- Naive Bayes — var_smoothing
-- Decision Tree — GridSearchCV (max_depth, min_samples)
-- Random Forest — GridSearchCV (n_estimators, max_depth)
-- Neural Network — manual tuning (lr, dropout, batch size, units)
+- Logistic Regression - GridSearchCV (C, solver)
+- K-Nearest Neighbours - GridSearchCV (k, metric)
+- Naive Bayes - var_smoothing
+- Decision Tree - GridSearchCV (max_depth, min_samples)
+- Random Forest - GridSearchCV (n_estimators, max_depth)
+- Neural Network - manual tuning (lr, dropout, batch size, units)
 
 Neural network (summary): 32 → 16 hidden units, ReLU, Sigmoid output, Adam (lr=0.001), dropout 0.10, batch size 64
 
