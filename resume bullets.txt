@@ -1,0 +1,24 @@
+Original (5 bullets)
+- Built an end-to-end churn prediction pipeline on IBM Telco data (7,043 rows; 21 features), including data cleaning, stratified sampling to 5,000 records, and EDA that surfaced key churn drivers like contract type, tenure, and payment method.
+- Developed a robust modeling workflow with preprocessing (scaling + one-hot encoding), ANOVA-based feature selection, and 5-fold stratified CV to preserve class balance and reduce bias.
+- Trained and tuned six ML models plus a neural network; achieved best ROC-AUC of 0.836 (Logistic Regression), outperforming tree and NN baselines on the same evaluation protocol.
+- Translated model insights into business actions, prioritizing retention for high-bill/short-tenure and month-to-month segments and recommending billing method shifts to reduce churn risk.
+- Produced a reproducible analysis package with separate EDA and modeling notebooks, model comparison tables, and documented methodology/results for portfolio-ready presentation.
+
+Resume (3 bullets)
+- Built an end-to-end churn prediction pipeline on IBM Telco data (7,043 rows; 21 features), including data cleaning, stratified sampling to 5,000 records, and EDA to isolate churn drivers.
+- Developed a robust modeling workflow with preprocessing (scaling + one-hot encoding), ANOVA-based feature selection, and 5-fold stratified CV to preserve class balance.
+- Trained and tuned six ML models plus a neural network; achieved best ROC-AUC of 0.836 (Logistic Regression) and compared models on a consistent test protocol.
+
+Website (4-5 bullets)
+- Built an end-to-end churn prediction pipeline on IBM Telco data (7,043 rows; 21 features), including cleaning, stratified sampling to 5,000 records, and EDA.
+- Identified top churn indicators such as contract type, tenure, monthly charges, and payment method to guide feature selection.
+- Implemented preprocessing with scaling + one-hot encoding, ANOVA-based feature selection, and stratified 5-fold CV to handle class imbalance.
+- Trained and tuned six ML models plus a neural network; best ROC-AUC reached 0.836 with Logistic Regression.
+- Packaged the work into reproducible EDA and modeling notebooks with model comparison tables and documented methodology.
+
+Tech stack
+- Python, pandas, NumPy, scikit-learn, TensorFlow (Keras), Matplotlib, Seaborn, Jupyter Notebook
+
+Concepts used
+- EDA, data cleaning, stratified sampling, train/test split, feature selection (ANOVA F-test), preprocessing (scaling, one-hot encoding), stratified k-fold cross-validation, hyperparameter tuning, classification metrics (accuracy, precision, recall, F1, ROC-AUC)
