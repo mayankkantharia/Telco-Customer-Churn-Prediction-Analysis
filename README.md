@@ -4,7 +4,6 @@
 
 Predicting customer churn for a telecom provider using a complete ML pipeline: EDA, feature selection, six classifiers, hyperparameter tuning, and a neural network. Best ROC-AUC: **0.836**.
 
----
 
 ## Table of Contents
 - [Problem](#problem)
@@ -16,13 +15,11 @@ Predicting customer churn for a telecom provider using a complete ML pipeline: E
 - [How to Run](#how-to-run)
 - [Data Source](#data-source)
 
----
 
 ## Problem
 
 Customer churn is a key revenue risk for telecoms. This project identifies at-risk customers using demographics, service usage, and billing data so that targeted retention actions can be taken.
 
----
 
 ## Dataset
 
@@ -31,7 +28,6 @@ Customer churn is a key revenue risk for telecoms. This project identifies at-ri
 - **Features:** 21 (demographics, contract type, payment method, services, billing)
 - **Class balance:** ~73% non-churn / 27% churn
 
----
 
 ## Methodology
 
@@ -65,7 +61,6 @@ Models trained and tuning:
 
 Neural network (summary): 32 → 16 hidden units, ReLU, Sigmoid output, Adam (lr=0.001), dropout 0.10, batch size 64
 
----
 
 ## Results
 
@@ -84,7 +79,7 @@ Logistic Regression achieved the best ROC-AUC (0.836), showing strong discrimina
 
 Top predictors: Contract type · Monthly charges · Tenure · Payment method · Tech support
 
----
+
 
 ## Business Recommendations
 
@@ -93,7 +88,6 @@ Top predictors: Contract type · Monthly charges · Tenure · Payment method · 
 - Provide onboarding and loyalty incentives for high-bill, short-tenure customers
 - Prioritise retention outreach for senior citizens and new customers
 
----
 
 ## Project Structure
 
@@ -106,7 +100,6 @@ Telco-Customer-Churn-Prediction-Analysis/
 ├── README.md                                         # This file
 ```
 
----
 
 ## How to Run (quick)
 
@@ -132,12 +125,10 @@ pip install pandas numpy scikit-learn tensorflow matplotlib seaborn jupyter
 jupyter notebook "Telco Customer Churn Prediction Analysis.ipynb"
 ```
 
----
 
 ## Data Source
 
 Blastchar. (2018). *Telco Customer Churn* [Data set]. Kaggle.  
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
----
 
